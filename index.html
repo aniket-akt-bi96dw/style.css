@@ -1,10 +1,157 @@
-body{
-    background-color: gray;
-    color: white;
-}
-td{
-    border: 2px solid black;
-}
-th{
-    border: 2px solid blue;
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <style>
+        /* Reset some default margins/paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Page background */
+        body {
+            background: linear-gradient(to right, yellow, green);
+            color: black;
+            padding: 20px;
+        }
+
+        /* Main heading */
+        h1 {
+            text-align: center;
+            color: blueviolet;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        /* Subheading */
+        h2 {
+            text-align: center;
+            color: blue;
+            margin-bottom: 20px;
+        }
+
+        /* Table styling */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        caption {
+            font-weight: bold;
+            padding: 10px;
+            background: gray;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        th,
+        td {
+            border: 1px solid white;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: blue;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: whitesmoke;
+        }
+
+        /* Image styling */
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            border: 3px solid gray;
+        }
+
+        /* Links */
+        a {
+            color: blue;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: darkorange;
+            text-decoration: underline;
+        }
+
+        /* Lists */
+        h3 {
+            margin-top: 30px;
+            color: blanchedalmond;
+            text-align: center;
+        }
+
+        ul,
+        ol {
+            width: fit-content;
+            margin: 10px auto;
+            padding: 15px 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        li {
+            padding: 5px 0;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is my new website</h1>
+    <h2>Here is my information</h2>
+
+    <table>
+        <caption>My Details</caption>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Address</th>
+            <th>Phone No</th>
+        </tr>
+        <tr>
+            <td>Aniket</td>
+            <td>Thakur</td>
+            <td>pokhara</td>
+            <td>444222111</td>
+        </tr>
+    </table>
+    <p style="text-align:center; margin-top:20px;">
+        Visit my favorite site:
+        <a href="http://youtube.com" target="_blank">YouTube</a>
+    </p>
+
+    <h3>My Friends</h3>
+    <ul>
+        <li>Aniket</li>
+        <li>Chandan</li>
+        <li>Ashok</li>
+    </ul>
+
+    <h3>Categories</h3>
+    <ol>
+        <li>Human</li>
+        <li>Animal</li>
+        <li>Tiger</li>
+    </ol>
+</body>
+
+</html>
